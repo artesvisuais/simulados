@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="pt-br">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Nova Objetiva</title>
+
+
+<style type="text/css">
+
+div { width:90%; }
+
+
+    .textWord_about {width:95%;border:0.1em solid gray;padding:0 0.5em 0.5em 0.5em ;margin:0 auto;}
+    img {width:100%}
+
+#next {width:10% ; height: 10%; float:right; padding: 2em 0 0 0;}
+#back {width:10% ; height: 10%; float:left; padding:1em 0 0 0;}
+
+
+#Questao { width:96%;background-color:yellow;}
+#letra {
+    background-color: lightgrey;
+    width: 10%;
+    height: 10%;
+   
+}
+
+a.fill-div {
+    font-size:3em;
+    text-align: left;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+  function funcaoCERTO1()
+{
+alert("Você acertou!  A gestão interpretativa define-se com a construção do contexto escolar a partir das relações e dos acontecimentos diários, e destaca a interpretação das situações ignorando os aspectos objetivos valorizando os aspectos humanos e não estrutural da escola (GROCHOSKA, 2012. p. 94).  ");
+}
+
+
+
+
+function funcaoERRO()
+{
+alert("Resposta Errada!");
+}
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+</script>
+
+</head>
+<body>
+
+<!-- separador de divs xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+    
+    <div class="textWord_about" data-link="aba_0"> <!-- id da aba --> 
+        
+        
+   <!-- conteudo -->     
+    <p>Este é um repositório de simulados para estudos. <br> Você esta acessando o exercício de nº 3 - Prática Profissional a Escola.
+    </p><p>Contribua você também enviando  para este repositório seus simulados pessoais para as pessoas que estudam a mesma materia que você.
+    </p>
+        
+   <!-- fecha conteudo -->  
+
+
+            <div id="next"> <a class="link" href="#about" data-link="aba_1"> <img src="next.jpg"/> </a> <!-- data-link para proxima aba --> 
+        </div>  
+          <!--   <br> <div id="back"> <a class="link" href="#about" data-link="capa"> <img src="back.jpg"/></a> <!-- data-link para voltar aba --> 
+        </div>     
+    </div>
+  
+<!-- separador de divs xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    
+    
+    <div class="textWord_about" data-link="aba_1"> <!-- id da aba --> 
+        
+        
+   <!-- conteudo -->     
+        
+        
+  <b>Questão 1/10</b><br>
+<p>Na gestão escolar interpretativa a escola é uma realidade social subjetivamente
+construída, não dada nem objetiva. Privilegia menos o ato de organizar e mais a
+“ação organizadora” com valores e práticas compartilhados. A ação organizadora
+valoriza muito as interpretações, os valores, as percepções e os significados
+subjetivos, destacando o caráter humano, e preterindo o caráter formal,
+estrutural normativo.</p><p>
+BARTNIK, Helena Leomir de Souza. Gestão Educacional. Curitiba: Intersaberes,
+2012 p.75 <br></p><p>
+A respeito dos diferentes modelos de gestão citados por Grochoska (2011), o que
+define a gestão interpretativa?<br></p><p>
+Analise as proposições abaixo, assinalando V para as afirmativas verdadeiras e
+F para as afirmativas falsas:<br><br></p><p>
+( ) Parte de metas de qualidade total, tendo como foco de trabalho a gestão
+empresarial.<br>
+( ) O contexto escolar se constrói a partir das relações e dos acontecimentos
+diários, não sendo uma realidade dada, pronta e acabada.<br>
+( ) Desequilíbrio entre aspectos objetivos e os aspectos subjetivos que
+norteiam a escola.<br>
+( ) Enfatiza a interpretação das situações e ignora os aspectos objetivos,
+valorizando o aspecto humano e não a estrutura formal da escola.<br>
+Assinale a sequência correta:
+
+    <br> <br>
+
+       <p><b>A __<input type="Radio" name=""  onclick="funcaoCERTO1()" value=""  >F – V – F – V</b></p>
+       <p><b>B __<input type="Radio" name=""  onclick="funcaoERRO()" value=""  >V – F – V – F</b></p>
+       <p><b>C __<input type="Radio" name=""  onclick="funcaoERRO()" value=""  >V – V – F – F</b></p>
+       <p><b>D __<input type="Radio" name=""  onclick="funcaoERRO()" value=""  > F – F – V – V</b></p>
+       <p><b>E __<input type="Radio" name=""  onclick="funcaoERRO()" value=""  > F – V – V – V</b></p>
+      <div id="Questao">  <div id="letra"> <a href="#" class="fill-div" onclick="funcaoERRO()">(E)</a></div>f kkall ll </div>
+        
+   <!-- fecha conteudo -->  
+
+
+            <div id="next"> <a class="link" href="#about" data-link="aba_2"> <img src="next.jpg"/> </a> <!-- data-link para proxima aba --> 
+        </div>  
+            <br> <div id="back"> <a class="link" href="#about" data-link="aba_0"> <img src="back.jpg"/></a> <!-- data-link para voltar aba --> 
+        </div>     
+    </div>
+    
+
+
+
+<script type="text/javascript">
+$('.textWord_about').not(':first').hide();
+$('.link').click(function () {
+    $('.textWord_about').hide();
+    $('.textWord_about[data-link=' + $(this).data('link') + ']').slideDown('fast')
+});
+</script>
+</div></body>
+</html>
