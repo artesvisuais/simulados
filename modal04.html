@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="pt-br">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>modal 4</title>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+            $('.pagina').click(function(){
+              $('#modal').fadeIn(500); 
+              
+             var url = $(this).attr ('href');
+          
+              
+              $('.modal-box-conteudo').load("pagina.html "+ url); 
+          });
+                                                                
+          
+          $('.fechar').click(function(event){
+               
+          
+              $('#modal').fadeOut(500);
+              });
+              
+              });
+              
+function mudarCor1(){
+	document.getElementById("botao").style.backgroundColor = "red";
+	}
+	
+	
+	function mudarCor(){
+	document.getElementByClassName("escolha").style.backgroundColor = "red";
+	}
+</script>
+
+<style rel="stylesheet" type="text/css">
+#modal {background:rgba(0,0,0, 0.8);width:100%; height:100%; position:fixed; left:0; top:0;display:none;}
+.modal-box {background:#FFF; width:80% ;height:80%;position:absolute; left:50%; top:50%; margin-left: -40%; margin-top: -30%; }
+.fechar {padding: 0.5em 0.9em;border: 0.2em solid #ccc; position:absolute; right: 0.1em; top:0.1em; border-radius:30%; color:red; cursor: pointer; }
+.fechar:hover{color:black;background:rgba(130,145,245, 0.8);}
+button {color:black;background:#ccc;boder:0.1em solid #000;border-radius:50%;cursor:pointer;}
+.button:focus {color:white;background:white;}
+.button:active {color:red;}
+
+.mystyle {background-color: aqua;padding: 5%;border: 0.2em solid gray}
+
+.mystyle2 {background-color: #047F7F; padding: 5%;border: 0.2em solid gray}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+    <!-- inicio do Modal -->
+   
+    <h1>Conteudo primeiro modal</h1>
+    
+ 
+     <br>
+      
+    <br>
+
+     <a href="#pagina1" class="pagina" ><input type="radio" class="escolha" >A</button></a><br>
+     <a href="#pagina2" class="pagina" ><button  class="escolha" name="b1" onclick="javascript:mudarCor()" >B</button></a><br><br>
+     <a href="#pagina3" class="pagina" ><button name="b2" class="escolha" >C</button></a><br>
+
+    <br>
+    <a href="#pagina1" class="pagina" >Pagina 1 - </a>    
+    <a href="#pagina2" class="pagina" >Pagina 2 - </a>
+    <a href="#pagina3" class="pagina" >Pagina 3  </a>
+    
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --> 
+    <div id="myDIV" class="mystyle">
+<!-- <button onclick="myFunction()">Try it</button> -->
+<a href="#pagina2" class="pagina" ><button name="b2"  onclick="myFunction()" >B</button></a>
+
+<b>F – V – F – V</b>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.className === "mystyle") {
+        x.className = "mystyle2";
+    } else {
+        x.className = "mystyle";
+    }
+}
+</script>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    
+ <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --> 
+    <div id="myDIV3" class="mystyle">
+<!-- <button onclick="myFunction()">Try it</button> -->
+<a href="#pagina3" class="pagina" ><button name="C3"  onclick="myFunction3()" >C</button></a>
+
+( ) Enfatiza a interpretação das situações e ignora os aspectos objetivos,
+valorizando o aspecto humano e não a estrutura formal da escola.<br>
+Assinale a sequência correta:
+</div>
+<script>
+function myFunction3() {
+    var x = document.getElementById("myDIV3");
+    if (x.className === "mystyle") {
+        x.className = "mystyle2";
+    } else {
+        x.className = "mystyle";
+    }
+}
+</script>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    
+       <div id="modal">
+         <div class="modal-box">
+           <div class="modal-box-conteudo">
+     
+           
+           </div>
+           <div class="fechar">X</div>
+           </div>
+           </div>
+         </div>  
+ <!-- fim do modal -->       
+        
+      
+         
+         
+         
+</script>
+</body>
+</html>
